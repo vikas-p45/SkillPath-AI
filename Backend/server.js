@@ -74,7 +74,11 @@ app.get('/api/health', (req, res) => res.json({ status: 'ok', message: 'SkillPat
 if (process.env.NODE_ENV === 'production') {
   const __dirname = path.resolve();
   app.use(express.static(path.join(__dirname, '../skillpath-frontend/dist')));
-  app.get('*', (req, res) => res.sendFile(path.resolve(__dirname, '../skillpath-frontend/dist', 'index.html')));
+ app.get('/*', (req, res) => {
+  res.sendFile(
+    path.resolve(__dirname, '../skillpath-frontend/dist', 'index.html')
+  );
+});
 } else {
   app.get('/', (req, res) => res.send('API is running....'));
 }
@@ -92,6 +96,3 @@ app.listen(PORT, () => {
 
 
 
-// mongodb 
-//vikas708012_db_user
-//3FdITcSq1UJEMwEY
