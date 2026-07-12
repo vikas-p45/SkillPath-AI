@@ -1,7 +1,7 @@
 const testimonials = [
-  { name: 'Priya Sharma', role: 'Web Developer', text: 'SkillPath AI gave me a clear roadmap when I was completely lost. The AI chat answered every doubt I had at 2 AM!', avatar: 'PS' },
-  { name: 'Arjun Mehta', role: 'CS Student', text: 'I generated my roadmap and built 3 projects following it. Got my first internship within 4 months!', avatar: 'AM' },
-  { name: 'Fatima Khan', role: 'Career Switcher', text: 'Switched from marketing to data science using this platform. The personalized plan made all the difference.', avatar: 'FK' },
+  { name: 'Vikas Prajapati', role: 'Web Developer', text: 'SkillPath AI gave me a clear roadmap when I was completely lost. The AI chat answered every doubt I had at 1 AM!', avatar: 'PS' },
+  { name: 'Stuti Yadav', role: 'CS Student', text: 'I generated my roadmap and built 3 projects following it. Got my first internship within 4 months!', avatar: 'AM' },
+  { name: 'Rohit Prajapati', role: 'Career Switcher', text: 'Switched from marketing to data science using this platform. The personalized plan made all the difference.', avatar: 'FK' },
 ]
 
 const TestimonialSection = () => (
